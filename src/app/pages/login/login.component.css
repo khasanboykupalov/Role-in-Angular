@@ -1,0 +1,14 @@
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.form {
+  display: flex;
+  min-width: 400px;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,0 +1,17 @@
+<div class="container">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" placeholder="Email">
+            <mat-error *ngIf="form.controls['email'].invalid">Email notogri</mat-error>
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill">
+            <mat-label>Parol</mat-label>
+            <input matInput type="password" formControlName="password" placeholder="Password">
+        </mat-form-field>
+    
+    
+        <button mat-raised-button color="primary" [disabled]="form.invalid">Login</button>
+    </form>
+</div>
