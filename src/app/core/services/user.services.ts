@@ -17,6 +17,8 @@ export class UserService {
         this._users.update(users => 
             users.map(user => (user.id === updated.id ? {...user, ...updated}: user ))
         );
+
+        alert('Foydalanuvchi ma\'lumotlari  yangilandi!');
     }
 
     deleteUser(id:number) {
@@ -25,6 +27,7 @@ export class UserService {
 
     addUser(user:User): void {
         this._users.update(users => [...users, user])
+        alert('Foydalanuvchi  qoshildi');
     }
 
     

@@ -12,9 +12,25 @@ export const MOCK_USERS: User[] = [
     {
         id:2,
         email: 'user@example.com',
-        password:'user',
+        password:'user1',
         role:'user',
-        name:'Regular User',
+        name:'Regular User 1',
+        nickname:'somethinf'
+    },
+    {
+        id:3,
+        email: 'user@example.com',
+        password:'user2',
+        role:'user',
+        name:'Regular User 2 ',
+        nickname:'somethinf'
+    },
+    {
+        id:4,
+        email: 'user@example.com',
+        password:'user3',
+        role:'user',
+        name:'Regular User 3',
         nickname:'somethinf'
     }
 ]
