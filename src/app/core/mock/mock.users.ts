@@ -7,7 +7,7 @@ export const MOCK_USERS: User[] = [
         password: 'admin',
         role: 'admin',
         name: 'Admin User',
-        avater: ''
+        nickname: 'something'
     },
     {
         id:2,
@@ -15,6 +15,6 @@ export const MOCK_USERS: User[] = [
         password:'user',
         role:'user',
         name:'Regular User',
-        avater:''
+        nickname:'somethinf'
     }
 ]

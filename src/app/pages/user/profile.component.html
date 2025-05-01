@@ -1,0 +1,17 @@
+<div class="container">
+    <form [formGroup]="form" (ngSubmit)="save()">
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+      
+        <mat-form-field appearance="fill">
+          <mat-label>NickName</mat-label>
+          <input matInput formControlName="avatar" />
+        </mat-form-field>
+      
+        <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+          Saqlash
+        </button>
+      </form>
+</div>

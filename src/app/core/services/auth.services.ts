@@ -6,6 +6,8 @@ import { User } from "../models/user.model";
 
 export class AuthService {
     private _currentUser = signal<User | null>(null);
+
+
     
     login(email:string, password:string): boolean {
         const foundUser = MOCK_USERS.find(
@@ -33,4 +35,8 @@ export class AuthService {
     isAdmin(): boolean {
         return this._currentUser()?.role === 'admin'
     }
+
+    refreshUser(user: User) {
+        this._currentUser.set(user);
+      }
 }

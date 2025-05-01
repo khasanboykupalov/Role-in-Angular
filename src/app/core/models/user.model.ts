@@ -4,5 +4,5 @@ export interface User {
     password:string;
     role:'admin' | 'user';
     name:string;
-    avater?:string
+    nickname:string
 }
